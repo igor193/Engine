@@ -1,0 +1,113 @@
+html {
+
+    background: #fff;
+}
+
+.headerTop {
+
+    height: 37px;
+    width: auto;
+    background: #222b3e;
+    margin: 0;
+}
+
+.headerDown {
+
+    height: 60px;
+    width: 727px;   
+    margin: 0 auto 0 auto;
+   
+}
+
+#fon {
+    display: block;
+    height: 321px;
+    width: 630px;
+    margin: 0 auto 0 auto; 
+}
+
+.fonIndex {    
+    background:#222b3e;
+    height: 321px;
+    width: auto;           
+    background-size: 100%;
+}
+
+p {
+    text-align: justify;    
+}
+
+.News {
+    float: right;    
+}
+
+.infoBox {
+    padding: 57px;
+    width: 1022px;
+  
+    height: 2000px;
+    margin: 0 auto 0 auto;
+}
+
+ul {
+
+    padding: 0;
+}
+
+li {
+    
+    display: inline;
+    color: #000215;  
+    padding: 4px;
+    font-size: 23px;
+    
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    float: left;
+    width: 100%;
+}
+
+.btn-group:hover {
+    background: rgb(230, 47, 47);
+}
+
+#logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 252px;
+    height: 60px;
+    float: left;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    margin: 0 auto 0 auto;
+    
+}
+
+a {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color:  #000215;
+}
+
+body {
+
+    margin: 0;
+}
+
+.loginbtn {
+    width: auto;
+    height: 33px;
+    /* padding: 10px 18px; */
+    background-color: #f44336;
+  }
