@@ -2,8 +2,8 @@
 -- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Май 16 2019 г., 21:18
+-- Хост: 127.0.0.1:3307
+-- Время создания: Май 23 2019 г., 00:20
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.6.32
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- База данных: `infobiz`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `Menu`
+--
+
+CREATE TABLE `Menu` (
+  `id` int(11) NOT NULL,
+  `href` char(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `nameMenu` text CHARACTER SET cp1251 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `Menu`
+--
+
+INSERT INTO `Menu` (`id`, `href`, `nameMenu`) VALUES
+(1, '/', 'Главная'),
+(4, 'ab_progect/', 'Обо мне'),
+(5, 'rewiew/', 'Обзоры'),
+(6, 'resoches/', 'Ресурсы'),
+(7, 'arhive/', 'Архивы');
 
 -- --------------------------------------------------------
 
@@ -116,6 +139,12 @@ INSERT INTO `users` (`idx`, `login`, `pass`) VALUES
 --
 
 --
+-- Индексы таблицы `Menu`
+--
+ALTER TABLE `Menu`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `stoks`
 --
 ALTER TABLE `stoks`
@@ -130,6 +159,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT для сохранённых таблиц
 --
+
+--
+-- AUTO_INCREMENT для таблицы `Menu`
+--
+ALTER TABLE `Menu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `stoks`
